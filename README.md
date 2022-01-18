@@ -3,11 +3,11 @@
 
 ## Description
 
-The Sudoku Solver takes a [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku), and uses backtracking to solve it by checking the empty spaces for which numbers fit. The task is done using several functions. First, it will check for empty slots in the board that is provided in the function (labeled with 0s), and then will take that position in the board and check for which numbers (starting with 1 and ascending to 9) can fit there based on the "valid" function, which checks if that same number is already in the row, column, or box; if the number works, it will be placed in that square. Then it will find the next empty square to see which number works with the same process. If nothing fits, it will backtrack to the previously replaced square and see if another number works so that the previous number can be used elsewhere. The program will do this until all numbers work, or else will return False. Lastly, if the function returns True, it will print out the new, solved board.
+The Sudoku Solver takes a [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku), and uses backtracking to solve it by checking the empty spaces for which numbers fit. The task is done using several functions. First, it will check for empty spot (labeled with 0s) in the board using the "find_empty" function. Then, it will take that position in the board (based on column and row) and check for which numbers (starting with 1 and ascending to 9) can fit there using the "valid" function, which checks if that same number is already in the row, column, or box; if the number works, it will be placed in that spot. Then it will find the next empty spot to see which number works with the same process. If nothing fits, it will backtrack to the previously replaced spoit and see if another number works so that the previous number can be used elsewhere. The program will do this until all numbers work, or else will return False. Lastly, if the function returns True, it will print out the new, solved board.
 
 ## Usage
 
-To use this solver, all you will need is a current version of Python. The function to solve however, requires a Sudoku puzzle in the format of a list of 10 lists with 10 numbers in them. An example is below:
+To use this solver, all you will need is a current version of Python. The function to solve however, requires a Sudoku puzzle/board in the format of a list of 9 lists with 9 numbers in them. An example is below:
 
 ```python
 board = [
