@@ -25,4 +25,4 @@ board = [
 
 ## Credits
 
-The Sudoku Solver was created with 
+The Sudoku Solver was created with help from [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg) on YouTube.
