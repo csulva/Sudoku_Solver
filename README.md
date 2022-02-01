@@ -1,9 +1,10 @@
 # Sudoku Solver
 
+The Sudoku Solver takes a [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku), and uses backtracking with Python to solve it by checking the empty spaces for which numbers fit.
 
 ## Description
 
-The Sudoku Solver takes a [Sudoku puzzle](https://en.wikipedia.org/wiki/Sudoku), and uses backtracking to solve it by checking the empty spaces for which numbers fit. The task is done using several functions. First, it will check for empty spot (labeled with 0s) in the board using the "find_empty" function. Then, it will take that position in the board (based on column and row) and check for which numbers (starting with 1 and ascending to 9) can fit there using the "valid" function, which checks if that same number is already in the row, column, or box; if the number works, it will be placed in that spot. Then it will find the next empty spot to see which number works with the same process. If nothing fits, it will backtrack to the previously replaced spoit and see if another number works so that the previous number can be used elsewhere. The program will do this until all numbers work, or else will return False. Lastly, if the function returns True, it will print out the new, solved board.
+The Sudoku Solver uses several functions to complete the puzzle. First, it will check for empty spot (labeled with 0s) in the board using the "find_empty" function. Then, it will take that position in the board (based on column and row) and check for which numbers (starting with 1 and ascending to 9) can fit there using the "valid" function, which checks if that same number is already in the row, column, or box; if the number works, it will be placed in that spot. Then it will find the next empty spot to see which number works with the same process. If nothing fits, it will backtrack to the previously replaced spoit and see if another number works so that the previous number can be used elsewhere. The program will do this until all numbers work, or else will return False. Lastly, if the function returns True, it will print out the new, solved board.
 
 ## Usage
 
