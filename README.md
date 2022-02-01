@@ -22,6 +22,7 @@ board = [
     [0,4,9,2,0,6,0,0,7]
 ]
 ```
+Then, run the file and watch Python print a solved board!
 
 ## Credits
 
